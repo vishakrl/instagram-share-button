@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .buttons {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+  .btn-share {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn-share:hover {
+    scale: 1.1;
+  }
+  .animate-to-left {
+    animation: toLeft 0.3s ease-in-out forwards;
+  }
+  
+  .animate-to-top {
+    animation: toTop 0.3s 0.2s ease-in-out forwards;
+  }
+  
+  .animate-to-right {
+    animation: toRight 0.3s 0.4s ease-in-out forwards;
+  }
+  .share {
+    z-index: 5;
+    outline: white 3px solid;
+  }
+  .yt {
+    color: #ff0000;
+  }
+  .ig {
+    color: #a12d2d;
+  }
+  .gh {
+    color: #000000;
+  }
+  @keyframes toLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-60px);
+    }
+  }
+  @keyframes toRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(60px);
+    }
+  }
+  @keyframes toTop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-60px);
+    }
+  }
